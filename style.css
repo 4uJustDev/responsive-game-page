@@ -109,5 +109,106 @@ section{
 .heroes-text a i{
     margin-right: 12px;
 }
+@media (max-width: 1460px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 10%;
+        transition: .2s;
+    }
 
-
+}
+@media (max-width: 1260px){
+    section{
+        padding: 0 6%;
+        transition: .2s;
+    }
+    .heroes-text h1{
+        font-size: 70px;
+    }
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 1020px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .heroes-text h2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1020px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .heroes-text h2{
+        font-size: 16px;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #49555C;
+        padding: 22px 20px;
+        transition: all .55s ease;
+        border-radius: 20px;
+    }
+    .navlist a{
+        display: block;
+        margin: 12px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+    .heroes{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 200px repeat(2,1fr);
+        align-items: center;
+        row-gap: 0 1000 0;
+        gap: 2rem;
+    }
+    section{
+        padding: 16% 8% 0 8%;
+    }
+    .heroes-text h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .heroes-text p{
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 430px){
+    .heroes-text h1{
+        text-align: left;
+        font-size: 24px;
+    }
+    .heroes-text h2{
+        font-size: 14px;
+    }
+    .heroes-text a{
+        padding: 6px 10px;
+        line-height: 1.4;
+        font-size: 10px;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+}
